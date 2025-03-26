@@ -15,7 +15,7 @@ db.once('open', () => console.log(`Connected successfully to database`))
 app.use(cors())
 app.use(express.json())
 
-app.use('/api/v1/fitnessAllies', userRoute)
+app.use('/api/v1/fitnessAllies/user', userRoute)
 app.use('/api/v1/fitnessAllies/workout',workoutRoutes)
 
 app.listen(PORT, console.log(`Server started running at http://localhost:${PORT}/api/v1/fitnessAllies/`))
